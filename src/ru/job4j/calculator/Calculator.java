@@ -2,7 +2,7 @@ package ru.job4j.calculator;
 
 public class Calculator {
 
-    public static void plus(int first, int second){
+    public static void plus(int first, int second) {
         int result = first + second;
         System.out.println(result);
     }
@@ -23,7 +23,7 @@ public class Calculator {
         System.out.println(fiveMinusTwo);
         System.out.println(fourTimeTwo);
 
-        Calculator.plus(1,2);
-        plus(10,11);
+        Calculator.plus(1, 2);
+        plus(10, 11);
     }
 }
