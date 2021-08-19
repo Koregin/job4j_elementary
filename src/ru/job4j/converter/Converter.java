@@ -19,12 +19,12 @@ public class Converter {
         System.out.println("140 rubles are " + dollar + " dollar.");*/
         float in = 140;
         float expected = 2;
-        float expected2 = (float) 140/60;
+        float expected2 = (float) 140 / 60;
         float out = Converter.rubleToEuro(in);
         boolean passed = expected == out;
         System.out.println("140 rubles are " + expected + " euro. Test result : " + passed);
         out = Converter.rubleToDollar(in);
         passed = expected2 == out;
-        System.out.println("140 rubles are " + expected2 +" dollars. Test result : " + passed);
+        System.out.println("140 rubles are " + expected2 + " dollars. Test result : " + passed);
     }
 }
