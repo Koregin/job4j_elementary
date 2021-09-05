@@ -2,9 +2,10 @@ package ru.job4j.array;
 
 import java.util.Arrays;
 
-public class Split {
+public class Split2 {
     public static char[][] split(char[] str, char c) {
         char[][] result = new char[str.length / 2][];
+        int commonCount = 1;
         result[0] = new char[counter(str, 0, c)]; // Создаем первый массив
         int size;
         int index = 0;
@@ -20,7 +21,8 @@ public class Split {
             result[index][charInd] = str[i];
             charInd++;
         }
-        return Arrays.copyOf(result, index + 1);
+        commonCount = index + 1;
+        return Arrays.copyOf(result, commonCount);
     }
 
     private static int counter(char[] str, int start, char c) {
