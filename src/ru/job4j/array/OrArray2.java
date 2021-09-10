@@ -9,14 +9,12 @@ public class OrArray2 {
                 }
             }
         }
-        // Определение размера конечного массива
         int sizeArr = left.length;
         for (int i = 0; i < right.length; i++) {
             if (right[i] != 0) {
                 sizeArr++;
             }
         }
-        //
         int[] newArr = new int[sizeArr];
         int index = 0;
         for (int i = 0; i < left.length; i++) {

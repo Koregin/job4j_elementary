@@ -5,7 +5,6 @@ public class Merge {
         int indexRight = 0;
         int[] rsl = new int[left.length + right.length];
         int indexRsl = 0;
-        //
         for (int i = 0; i < left.length;) {
             if (left[i] > right[indexRight]) {
                 rsl[indexRsl] = right[indexRight];
@@ -17,7 +16,6 @@ public class Merge {
                 i++;
             }
         }
-        // Second array if it not empty
         for (int j = indexRight; j < right.length; j++) {
             rsl[indexRsl] = right[j];
             indexRsl++;

@@ -3,7 +3,7 @@ package ru.job4j.array;
 public class Divider {
     public static boolean check(int num, int[] ints) {
         boolean result = true;
-        int test = num;
+        int test;
         for (int i = 0; i < ints.length; i++) {
             test = num;
             while (true) {

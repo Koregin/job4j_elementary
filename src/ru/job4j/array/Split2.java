@@ -6,7 +6,7 @@ public class Split2 {
     public static char[][] split(char[] str, char c) {
         char[][] result = new char[str.length / 2][];
         int commonCount = 1;
-        result[0] = new char[counter(str, 0, c)]; // Создаем первый массив
+        result[0] = new char[counter(str, 0, c)];
         int size;
         int index = 0;
         int charInd = 0;
@@ -15,8 +15,8 @@ public class Split2 {
                 index++;
                 i++;
                 charInd = 0;
-                size = counter(str, i, c); //Получаем размер массива
-                result[index] = new char[size]; // Создаем новый массив
+                size = counter(str, i, c);
+                result[index] = new char[size];
             }
             result[index][charInd] = str[i];
             charInd++;

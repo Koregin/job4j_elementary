@@ -9,7 +9,6 @@ public class OrArray {
                 }
             }
         }
-        // Определение размера конечного массива
         int sizeArr = left.length;
         for (int i = 0; i < right.length; i++) {
             if (right[i] != 0) {

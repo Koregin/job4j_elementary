@@ -6,10 +6,10 @@ public class UnionThreeArrays {
         array[0] = left[0];
         array[array.length - 1] = left[left.length - 1];
         for (int index = 1; index < array.length - 1; index++) {
-            if (index % 2 != 0) { // Для нечентных индексов
-                array[index] = right[index - 1]; //четные индексы right массива
-            } else { // для четных индексов
-                array[index] = middle[index - 1]; // нечетные индексы middle массива
+            if (index % 2 != 0) {
+                array[index] = right[index - 1];
+            } else {
+                array[index] = middle[index - 1];
             }
         }
         return array;

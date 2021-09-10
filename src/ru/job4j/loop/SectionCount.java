@@ -2,12 +2,12 @@ package ru.job4j.loop;
 
 public class SectionCount {
     public static int count(int length, int section) {
-        int secCounter = 0;
+        int counter = 0;
         while (length >= section) {
             length -= section;
-            secCounter++;
+            counter++;
         }
-        return secCounter;
+        return counter;
     }
 
     public static void main(String[] args) {

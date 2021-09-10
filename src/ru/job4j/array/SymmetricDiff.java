@@ -12,29 +12,25 @@ public class SymmetricDiff {
                     match = true;
                 }
             }
-            // Если нет совпадений, то добавляем элемент в массив
             if (!match) {
                 tempArr[index] = left[i];
                 index++;
             }
         }
         match = false;
-        // Для правого множества
         for (int i = 0; i < right.length; i++) {
             match = false;
             for (int j = 0; j < tempArr.length; j++) {
                 if (right[i] == tempArr[j]) {
                     match = true;
-                    tempArr[j] = 0; // Обнуляем элемент при совпадении
+                    tempArr[j] = 0;
                 }
             }
-            // Если нет совпадений, то добавляем элемент в массив
             if (!match) {
                 tempArr[index] = right[i];
                 index++;
             }
         }
-        // Определение размера нового массива
         int newSize = 0;
         for (int i = 0; i < tempArr.length; i++) {
             if (tempArr[i] != 0) {

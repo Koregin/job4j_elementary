@@ -5,10 +5,8 @@ public class Defragment {
         for (int index = 0; index < array.length; index++) {
             if (array[index] == null) {
                 int point = index;
-                // ищем не пустую ячейку
                 for (int i = point + 1; i < array.length; i++) {
                     if (array[i] != null) {
-                        // меняем местами не пустую и пустую ячейки
                         array[point] = array[i];
                         array[i] = null;
                         break;

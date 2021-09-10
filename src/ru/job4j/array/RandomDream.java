@@ -2,10 +2,6 @@ package ru.job4j.array;
 
 public class RandomDream {
     public static String random(String[] prizes, int num) {
-        // Условие:
-        // Если число меньше 5, то
-        // 1 - car, 2 - ticker, 3 - flat, 4 - house
-        // Если число >= 5 то отнимаем от него 4 пока оно не станет меньше 5
         String prize = "";
         while (num >= 5) {
             num -= 4;
